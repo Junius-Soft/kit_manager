@@ -1,0 +1,268 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:kit_name",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "kit_name",
+  "description",
+  "section_break_1",
+  "kit_price",
+  "section_break_2",
+  "items",
+  "total_amount",
+  "section_break_3",
+  "discount_percentage",
+  "column_break_2",
+  "discount_amount",
+  "section_break_4",
+  "tax_percentage",
+  "column_break_3",
+  "tax_amount",
+  "section_break_5",
+  "grand_total",
+  "section_break_6",
+  "profit_percentage",
+  "column_break_4",
+  "profit_amount",
+  "section_break_7",
+  "overhead_percentage",
+  "column_break_5",
+  "overhead_amount",
+  "section_break_8",
+  "labor_percentage",
+  "column_break_6",
+  "labor_amount",
+  "section_break_9",
+  "yearend_bonus_percentage",
+  "column_break_7",
+  "yearend_bonus_amount",
+  "section_break_10",
+  "final_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "kit_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Kit Name",
+   "options": "Item",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "kit_name.description",
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "kit_price",
+   "fieldtype": "Currency",
+   "label": "Kit Price",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Kit Items"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Kit Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break",
+   "label": "Pricing"
+  },
+  {
+   "default": "0",
+   "fieldname": "discount_percentage",
+   "fieldtype": "Percent",
+   "label": "Discount %"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Currency",
+   "label": "Discount Amount",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "18",
+   "fieldname": "tax_percentage",
+   "fieldtype": "Percent",
+   "label": "Tax (KDV) %"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tax_amount",
+   "fieldtype": "Currency",
+   "label": "Tax Amount",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break",
+   "label": "Additional Costs"
+  },
+  {
+   "default": "0",
+   "fieldname": "profit_percentage",
+   "fieldtype": "Percent",
+   "label": "Profit %"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "profit_amount",
+   "fieldtype": "Currency",
+   "label": "Profit Amount",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "overhead_percentage",
+   "fieldtype": "Percent",
+   "label": "Overhead %"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "overhead_amount",
+   "fieldtype": "Currency",
+   "label": "Overhead Amount",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "labor_percentage",
+   "fieldtype": "Percent",
+   "label": "Labor %"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "labor_amount",
+   "fieldtype": "Currency",
+   "label": "Labor Amount",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "yearend_bonus_percentage",
+   "fieldtype": "Percent",
+   "label": "Year-end Bonus %"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "yearend_bonus_amount",
+   "fieldtype": "Currency",
+   "label": "Year-end Bonus Amount",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break",
+   "label": "Final Total"
+  },
+  {
+   "fieldname": "final_total",
+   "fieldtype": "Currency",
+   "label": "Final Total",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Kit Manager",
+ "name": "Kit",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
+

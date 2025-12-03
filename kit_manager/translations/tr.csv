@@ -1,0 +1,109 @@
+Source,Translated,Context
+Kit Manager,Kit Yöneticisi,
+Kit,Kit,
+Kits,Kitler,
+
+# Kit DocType Fields
+Kit Name,Kit Adı,
+Description,Açıklama,
+Enabled,Etkin,
+Kit Price,Kit Fiyatı,
+Kit Items,Kit Ürünleri,
+Items,Ürünler,
+Total Amount,Toplam Tutar,
+Discount %,İndirim %,
+Discount Amount,İndirim Tutarı,
+Tax (KDV) %,Vergi (KDV) %,
+Tax Amount,Vergi Tutarı,
+Grand Total,Genel Toplam,
+Pricing,Fiyatlandırma,
+
+# Kit Item DocType Fields
+Item Code,Ürün Kodu,
+Item Name,Ürün Adı,
+Quantity,Miktar,
+UOM,Birim,
+Birim Fiyatı,Birim Fiyatı,
+Price,Fiyat,
+Amount,Tutar,
+
+# Actions and Buttons
+Actions,İşlemler,
+Save,Kaydet,
+Add Row,Satır Ekle,
+Create Item,Ürün Oluştur,
+Update,Güncelle,
+Delete,Sil,
+Cancel,İptal,
+Submit,Onayla,
+
+# Messages
+Saved,Kaydedildi,
+Updated,Güncellendi,
+Deleted,Silindi,
+Created,Oluşturuldu,
+
+# Kit Manager specific messages
+Bayi Fiyat,Bayi Fiyat,
+Dealer Price added,Bayi Fiyatı eklendi,
+Dealer Price updated,Bayi Fiyatı güncellendi,
+Dealer Price deleted,Bayi Fiyatı silindi,
+Kit updated,Kit güncellendi,
+Price list created,Fiyat listesi oluşturuldu,
+
+# Validation messages
+Kit Name is required,Kit Adı zorunludur,
+Items are required,Ürünler zorunludur,
+Please add at least one item,Lütfen en az bir ürün ekleyin,
+Item Code is required,Ürün Kodu zorunludur,
+Quantity is required,Miktar zorunludur,
+
+# Price Changes
+Price Changes,Fiyat Değişiklikleri,
+Current Price,Güncel Fiyat,
+Old Price,Eski Fiyat,
+New Price,Yeni Fiyat,
+Price Change,Fiyat Değişimi,
+
+# Common terms
+Standard Buying,Standart Alış,
+Standard Selling,Standart Satış,
+Price List,Fiyat Listesi,
+Currency,Para Birimi,
+Company,Firma,
+Status,Durum,
+Active,Aktif,
+Inactive,Pasif,
+
+# Kit specific
+Kit contains this item,Kit bu ürünü içeriyor,
+All kits with this item,Bu ürünü içeren tüm kitler,
+Kit price updated automatically,Kit fiyatı otomatik güncellendi,
+Item price changed,Ürün fiyatı değişti,
+
+# Additional Costs
+Additional Costs,Ek Maliyetler,
+Profit %,Kar %,
+Overhead %,Genel Gider %,
+Labor %,İşçilik %,
+Year-end Bonus %,Yılsonu Primi %,
+Additional Cost Amounts,Ek Maliyet Tutarları,
+Profit Amount,Kar Tutarı,
+Overhead Amount,Genel Gider Tutarı,
+Labor Amount,İşçilik Tutarı,
+Year-end Bonus Amount,Yılsonu Primi Tutarı,
+Final Total,Nihai Toplam,
+
+# Errors
+Error creating Item Price,Item Price oluşturulurken hata,
+Error updating Kit,Kit güncellenirken hata,
+Error deleting Item Price,Item Price silinirken hata,
+Kit Price Update Error,Kit Fiyat Güncelleme Hatası,
+Kit Auto Update Error,Kit Otomatik Güncelleme Hatası,
+Price List Creation Error,Fiyat Listesi Oluşturma Hatası,
+
+# Notifications
+{0} Kit(s) updated,{0} Kit güncellendi,
+Price updated from ₺{0} to ₺{1},Fiyat ₺{0}'den ₺{1}'e güncellendi,
+Kit Prices Updated,Kit Fiyatları Güncellendi,
+

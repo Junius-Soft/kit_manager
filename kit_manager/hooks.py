@@ -137,13 +137,12 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Item Price": {
+		"on_update": "kit_manager.kit_manager.doctype.kit.kit.on_item_price_update",
+		"after_insert": "kit_manager.kit_manager.doctype.kit.kit.on_item_price_update"
+	}
+}
 
 # Scheduled Tasks
 # ---------------
