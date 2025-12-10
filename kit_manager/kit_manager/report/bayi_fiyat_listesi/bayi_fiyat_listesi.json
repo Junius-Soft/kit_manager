@@ -1,0 +1,34 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2025-12-10 14:00:48.948801",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 1,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2025-12-10 14:04:27.130350",
+ "modified_by": "Administrator",
+ "module": "Kit Manager",
+ "name": "Bayi Fiyat Listesi",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Item",
+ "report_name": "Bayi Fiyat Listesi",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Sales User"
+  },
+  {
+   "role": "Stock User"
+  }
+ ],
+ "timeout": 0
+}

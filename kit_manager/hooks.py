@@ -5,6 +5,11 @@ app_description = "-"
 app_email = "ylmzozlem.3461@gmail.com"
 app_license = "mit"
 
+# Fixtures
+fixtures = [
+	{"dt": "Report", "filters": [["module", "=", "Kit Manager"]]},
+]
+
 # Apps
 # ------------------
 
