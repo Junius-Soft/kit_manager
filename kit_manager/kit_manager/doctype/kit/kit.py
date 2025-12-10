@@ -20,11 +20,11 @@ class Kit(Document):
 		self.delete_kit_price_from_price_list()
 	
 	def update_kit_price_in_price_list(self):
-		"""Update or create Item Price for kit_name in Bayi Fiyat price list"""
+		"""Update or create Item Price for kit_name in Bayi Kit Fiyatı price list"""
 		if not self.kit_name:
 			return
 		
-		price_list_name = "Bayi Fiyat"
+		price_list_name = "Bayi Kit Fiyatı"
 		kit_price = flt(self.kit_price or 0)
 		
 		if not frappe.db.exists("Price List", price_list_name):
@@ -69,7 +69,7 @@ class Kit(Document):
 					kit_price
 				)
 				frappe.msgprint(
-					f"Bayi Fiyatı güncellendi: {self.kit_name} = ₺{kit_price:,.2f}",
+					f"Bayi Kit Fiyatı güncellendi: {self.kit_name} = ₺{kit_price:,.2f}",
 					alert=True,
 					indicator="blue"
 				)
@@ -83,7 +83,7 @@ class Kit(Document):
 				})
 				item_price.insert(ignore_permissions=True)
 				frappe.msgprint(
-					f"Bayi Fiyatı eklendi: {self.kit_name} = ₺{kit_price:,.2f}",
+					f"Bayi Kit Fiyatı eklendi: {self.kit_name} = ₺{kit_price:,.2f}",
 					alert=True,
 					indicator="green"
 				)
@@ -93,17 +93,17 @@ class Kit(Document):
 					"Kit Price Update Error"
 				)
 				frappe.msgprint(
-					f"Bayi Fiyatı eklenirken hata oluştu. Lütfen sistem yöneticisine başvurun.",
+					f"Bayi Kit Fiyatı eklenirken hata oluştu. Lütfen sistem yöneticisine başvurun.",
 					alert=True,
 					indicator="red"
 				)
 	
 	def delete_kit_price_from_price_list(self):
-		"""Delete Item Price for kit_name from Bayi Fiyat price list"""
+		"""Delete Item Price for kit_name from Bayi Kit Fiyatı price list"""
 		if not self.kit_name:
 			return
 		
-		price_list_name = "Bayi Fiyat"
+		price_list_name = "Bayi Kit Fiyatı"
 		
 		item_price_name = frappe.db.get_value(
 			"Item Price",
@@ -118,7 +118,7 @@ class Kit(Document):
 			try:
 				frappe.delete_doc("Item Price", item_price_name, force=True, ignore_permissions=True)
 				frappe.msgprint(
-					f"Bayi Fiyatı silindi: {self.kit_name}",
+					f"Bayi Kit Fiyatı silindi: {self.kit_name}",
 					alert=True,
 					indicator="orange"
 				)

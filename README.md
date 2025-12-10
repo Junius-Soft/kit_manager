@@ -4,7 +4,7 @@ ERPNext/Frappe uygulaması için geliştirilmiş kapsamlı kit (aksesuar seti) y
 
 ## 📋 Genel Bakış
 
-Kit Manager, aksesuar setlerinin (kit) yönetilmesini, fiyatlandırılmasını ve otomatik fiyat güncellemelerini sağlayan bir Frappe uygulamasıdır. Sistem, kit ürünlerinin ve içlerindeki normal ürünlerin fiyatlarını takip eder, otomatik hesaplamalar yapar ve bayi fiyat listesini güncel tutar.
+Kit Manager, aksesuar setlerinin (kit) yönetilmesini, fiyatlandırılmasını ve otomatik fiyat güncellemelerini sağlayan bir Frappe uygulamasıdır. Sistem, kit ürünlerinin ve içlerindeki normal ürünlerin fiyatlarını takip eder, otomatik hesaplamalar yapar ve bayi kit fiyatı listesini güncel tutar.
 
 ## ✨ Özellikler
 
@@ -30,25 +30,25 @@ Kit Manager, aksesuar setlerinin (kit) yönetilmesini, fiyatlandırılmasını v
 
 #### Fiyat Yönetimi:
 - **Standard Buying**: Kit items için Standard Buying fiyat listesinden otomatik fiyat çekme
-- **Bayi Fiyat**: Kit kaydedildiğinde otomatik olarak "Bayi Fiyat" listesine ekleme/güncelleme
+- **Bayi Kit Fiyatı**: Kit kaydedildiğinde otomatik olarak "Bayi Kit Fiyatı" listesine ekleme/güncelleme
 - **Otomatik Güncelleme**: Ürün fiyatları değiştiğinde kit fiyatlarını otomatik güncelleme
 
 ### 🔄 Otomatik İşlemler
 
 #### Kit Kaydedildiğinde:
 ✅ Kit fiyatı otomatik hesaplanır  
-✅ Bayi Fiyat listesine Item Price eklenir/güncellenir  
+✅ Bayi Kit Fiyatı listesine Item Price eklenir/güncellenir  
 ✅ Kullanıcıya bildirim gösterilir  
 
 #### Item Price Değiştiğinde (Standard Buying):
 ✅ İlgili tüm Kit'ler otomatik bulunur  
 ✅ Kit fiyatları yeniden hesaplanır  
-✅ Bayi Fiyat otomatik güncellenir  
+✅ Bayi Kit Fiyatı otomatik güncellenir  
 ✅ Kullanıcıya hangi Kit'lerin güncellendiği bildirilir  
 
 #### Kit Silindiğinde:
 ✅ Kit belgesi silinir  
-✅ Bayi Fiyat listesinden Item Price otomatik silinir  
+✅ Bayi Kit Fiyatı listesinden Item Price otomatik silinir  
 
 ### 📊 Dinamik Hesaplama
 
@@ -142,7 +142,7 @@ Nihai Toplam: ₺1.784,16
 
 → Kaydet →
 
-✅ Bayi Fiyat listesine eklenir
+✅ Bayi Kit Fiyatı listesine eklenir
    Item: AKS2071
    Price: ₺1.784,16
 ```
@@ -157,7 +157,7 @@ Item Price (Standard Buying):
 → Otomatik →
 
 ✅ İlgili Kit'ler güncellenir
-✅ Bayi Fiyat güncellenir
+✅ Bayi Kit Fiyatı güncellenir
 ✅ Bildirim gösterilir:
    "1 Kit güncellendi:
    • AKS2071: ₺1.784,16 → ₺2.784,16 (↑ ₺1.000,00)"
@@ -215,7 +215,7 @@ Kit Totals yeniden hesaplanır
     ↓
 Kit kaydedilir
     ↓
-Bayi Fiyat Item Price güncellenir
+Bayi Kit Fiyatı Item Price güncellenir
     ↓
 Kullanıcıya bildirim
 ```
@@ -249,7 +249,7 @@ Uygulama Türkçe çevirilerle birlikte gelir:
 
 1. **Item Master'da custom_kit alanı**: Kit ürünlerini işaretlemek için
 2. **Price List**: "Standard Buying" (ürün fiyatları için)
-3. **Price List**: "Bayi Fiyat" (otomatik oluşturulur)
+3. **Price List**: "Bayi Kit Fiyatı" (otomatik oluşturulur)
 
 ### Opsiyonel Ayarlar
 
@@ -348,7 +348,7 @@ Item Price değiştiğinde otomatik çağrılır. İlgili Kit'leri günceller.
 - `method`: Hook metodu (on_update/after_insert)
 
 **Returns:** None  
-**Side Effects:** Kit'leri günceller, Bayi Fiyat günceller, bildirim gösterir
+**Side Effects:** Kit'leri günceller, Bayi Kit Fiyatı günceller, bildirim gösterir
 
 #### `get_price_changes_html(kit_name)`
 Kit için fiyat değişikliklerini HTML tablo olarak döner.
@@ -388,7 +388,7 @@ kit_manager/
 - ✅ Kit ve Kit Item DocType'ları
 - ✅ Otomatik fiyat hesaplama
 - ✅ Standard Buying fiyat entegrasyonu
-- ✅ Bayi Fiyat otomasyonu
+- ✅ Bayi Kit Fiyatı otomasyonu
 - ✅ Item Price değişikliklerinde otomatik güncelleme
 - ✅ Dinamik tutar hesaplama
 - ✅ UOM desteği

@@ -44,10 +44,10 @@ Deleted,Silindi,
 Created,Oluşturuldu,
 
 # Kit Manager specific messages
-Bayi Fiyat,Bayi Fiyat,
-Dealer Price added,Bayi Fiyatı eklendi,
-Dealer Price updated,Bayi Fiyatı güncellendi,
-Dealer Price deleted,Bayi Fiyatı silindi,
+Bayi Fiyat,Bayi Kit Fiyatı,
+Dealer Price added,Bayi Kit Fiyatı eklendi,
+Dealer Price updated,Bayi Kit Fiyatı güncellendi,
+Dealer Price deleted,Bayi Kit Fiyatı silindi,
 Kit updated,Kit güncellendi,
 Price list created,Fiyat listesi oluşturuldu,
 
